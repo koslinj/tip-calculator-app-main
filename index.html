@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <img src="./images/logo.svg" alt="">
+  <div class="container">
+    <div class="left">
+      <div class="bill">
+        <img src="./images/icon-dollar.svg" alt="">
+        <p>Bill</p>
+        <input class="inp" id="billvalue" type="text" placeholder="0">
+      </div>
+      <div class="selecttip">
+        <p>Select Tip %</p>
+        <div class="buttons">
+          <button id="b">5%</button>
+          <button id="b">10%</button>
+          <button id="b">15%</button>
+          <button id="b">25%</button>
+          <button id="b">50%</button>
+          <input class="customclass inp" id="customvalue" type="text" placeholder="Custom">
+        </div>
+      </div>
+      <div class="numberofpeople">
+        <img src="./images/icon-person.svg" alt="">
+        <p>Number of People</p>
+        <p class="error hidden">Something is invalid</p>
+        <input class="inp" id="nopvalue" type="text" placeholder="0">
+      </div>
+    </div>
+    <div class="right">
+      <div class="tipamount">
+        <div class="text">
+          <p style="color: white;">Tip Amount</p>
+          <p style="font-size: 12px;">/ person</p>
+        </div>
+        <div class="cash">
+          <p class="value1">$0.00</p>
+        </div>
+      </div>
+      <div class="total">
+        <div class="text">
+          <p style="color: white;">Total</p>
+          <p style="font-size: 12px;">/ person</p>
+        </div>
+        <div class="cash">
+          <p class="value2">$0.00</p>
+        </div>
+      </div>
+      <div class="resetdiv">
+        <button onclick="reset()">RESET</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
