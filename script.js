@@ -47,7 +47,7 @@ function sprawdz(){
     }
     
     if (bill != '' & custom != '' & people != ''){
-        var p =  /([0-9]*[.])?[0-9]+/;
+        var p =  /^([0-9]*[.])?[0-9]+/;
         if (people.match(p) && bill.match(p) && custom.match(p))
         {
             document.querySelector('.error').classList.add("hidden");
@@ -67,7 +67,7 @@ function sprawdz(){
     }
     if (bill != '' & custom == '' & numvalue!=0 & people != ''){
 
-        var p =  /([0-9]*[.])?[0-9]+/;
+        var p =  /^([0-9]*[.])?[0-9]+/;
         if (people.match(p) && bill.match(p))
         {
             document.querySelector('.error').classList.add("hidden");
